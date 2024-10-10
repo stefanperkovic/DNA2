@@ -1,9 +1,9 @@
-Name: YOUR NAME HERE
+Name: Stefan Perkovic
 
-| Date    |  Time  |                                     Update |
-|:--------|:------:|-------------------------------------------:|
-| April 5 | 9-10pm | I tried to write abstract, efficient code. |
-|         |        |                                            |
+| Date       |     Time      |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Update |
+|:-----------|:-------------:|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| October 10 | 10:50 - 11:50 | Discussed with people in the class on different possible solutions to the problem set. The main goal was to find an algorithm that is not running in O(n) time and preferably one in something shorter like log(n). We discussed bitwise operators and trying to map each character to bitwise number and then shifting over them. I also though about potentially doing it a tree with the depth of the tree being the length of the section we are looking for and no deeper. Then I could try and figure out how to make lookups more efficient, but that is my struggle with the algorithm at the moment.  |
+|            |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 
 
 To add a new row to the table, click into a cell and then hit shift-enter.

@@ -23,25 +23,18 @@ public class DNA {
         map[6] = 11;
         int seq = 0;
 
-
-        int maxcount = 0;
         for (int i = 0; i < STR.length(); i++){
-            if (STR.charAt(i) == 'A'){
-
-
-            }
-            else if (STR.charAt(i) == 'C') {
-
-            }
-            else if (STR.charAt(i) == 'T') {
-
-            }
-            else{
-
-            }
-
+            seq = seq << 2;
+            seq += map[STR.charAt(i) - 'A'];
         }
 
+        int start = 0;
+        for (int i = 0; i < STR.length(); i++){
+            start = start << 2;
+            start += map[sequence.charAt(i) - 'A'];
+
+
+        }
 
 
 

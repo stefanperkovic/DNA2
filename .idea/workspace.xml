@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d822f69-9e3c-4e2b-8ee1-11779bb646bd" name="Changes" comment="Ideas for where to start.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DNA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DNA.java" afterDir="false" />
-    </list>
+    <list default="true" id="6d822f69-9e3c-4e2b-8ee1-11779bb646bd" name="Changes" comment="Looped through entire sequence looking for STR." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,12 +82,38 @@
       <option name="project" value="LOCAL" />
       <updated>1728586621459</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Continued thinking and started code.">
+      <option name="closed" value="true" />
+      <created>1728924891653</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728924891653</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Continued thinking and started code.">
+      <option name="closed" value="true" />
+      <created>1728929629432</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728929629432</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Looped through entire sequence looking for STR.">
+      <option name="closed" value="true" />
+      <created>1728934776605</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728934776605</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Ideas for where to start." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ideas for where to start." />
+    <MESSAGE value="Continued thinking and started code." />
+    <MESSAGE value="Looped through entire sequence looking for STR." />
+    <option name="LAST_COMMIT_MESSAGE" value="Looped through entire sequence looking for STR." />
   </component>
 </project>

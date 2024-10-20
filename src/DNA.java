@@ -10,49 +10,36 @@
  *</p>
  */
 
+
+
 public class DNA {
 
-    /**
-     * TODO: Complete this function, STRCount(), to return longest consecutive run of STR in sequence.
-     */
-    public static int STRCount(String sequence, String STR) {
-        int[] map = new int[STR.length()];
-        map[0] = 0b00;
-        map[2] = 0b01;
-        map[19] = 0b10;
-        map[6] = 0b11;
-        int seq = 0;
+    private static final int BASE = 256;
+    private static final long MOD = 1000000007;
 
+    public static int STRCount(String sequence, String STR) {
+
+        long STR_hash = 0;
         for (int i = 0; i < STR.length(); i++){
-            seq = seq << 2;
-            seq += map[STR.charAt(i) - 'A'];
+            STR_hash = (STR_hash * BASE + (STR.charAt(i) - 'A')) % MOD;
+        }
+
+        long current_hash = 0;
+        for (int i = 0; i < STR.length(); i++){
+            current_hash = (current_hash * BASE + (sequence.charAt(i) - 'A')) % MOD;
         }
 
 
-
+        int current_count = 0;
         int max_count = 0;
-        for (int i = 0; i < sequence.length(); i++){
+        for (int i = 0; i < sequence.length() - STR.length(); i++){
 
-            int start = 0;
-            for (int j = 0; j < STR.length(); j++) {
-                start = start << 2;
-                start += map[sequence.charAt(i + j) - 'A'];
-            }
-
-
-
-
-            int current_count = 0;
-            while (start == seq){
-                i+= STR.length();
-                start = 0;
-                for (int j = 0; j < STR.length(); j++) {
-                    start = start << 2;
-                    start += map[sequence.charAt(i + j) - 'A'];
-                }
-
-
+            if (current_hash == STR_hash){
                 current_count++;
+
+            }
+            else{
+                current_count = 0;
             }
 
 

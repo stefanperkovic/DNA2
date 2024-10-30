@@ -41,30 +41,34 @@ public class DNA {
             base_power = (base_power * BASE) % MOD;
         }
 
-        int current_count = 0;
-        int max_count = 0;
-        for (int i = STR.length(); i < sequence.length(); i++){
 
-            long temp_hash = current_hash;
-            int temp_pos = i;
-            while (temp_hash == STR_hash){
+        int max_count = 0;
+        int i = 0;
+        while(i <= sequence.length() - STR.length()){
+            int current_count = 0;
+
+            while (current_hash == STR_hash){
                 current_count++;
-                if (max_count < current_count){
-                    max_count = current_count;
-                }
+                i += STR.length();
                 // If we're not at the end, update the hash to the next window
-                if (temp_pos + STR.length() < sequence.length()) {
-                    for (int j = temp_pos; j < STR.length() + temp_pos; j++) {
-                        temp_hash = (temp_hash * BASE + sequence.charAt(j)) % MOD;
+                if (i <= sequence.length() - STR.length()) {
+
+                    current_hash = 0;
+                    for (int j = 0; j < STR.length(); j++) {
+                        current_hash = (current_hash * BASE + sequence.charAt(i + j)) % MOD;
                     }
                 }
-                temp_pos += STR.length();
-
             }
-            current_count = 0;
-            current_hash = ((current_hash + MOD) - (sequence.charAt(i - STR.length()) * base_power) % MOD) % MOD;
-            current_hash = ((current_hash * BASE) + sequence.charAt(i)) % MOD;
-
+            if (max_count < current_count){
+                max_count = current_count;
+            }
+            if (current_count == 0){
+                current_hash = ((current_hash + MOD) - (sequence.charAt(i) * base_power) % MOD) % MOD;
+                if (i + STR.length() < sequence.length()){
+                    current_hash = (current_hash * BASE + sequence.charAt(i + STR.length())) % MOD;
+                }
+                i++;
+            }
 
         }
 

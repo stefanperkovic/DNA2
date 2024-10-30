@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d822f69-9e3c-4e2b-8ee1-11779bb646bd" name="Changes" comment="Finished structure, but still getting errors.">
+    <list default="true" id="6d822f69-9e3c-4e2b-8ee1-11779bb646bd" name="Changes" comment="Trying to debug the error in my code.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WORK_LOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/WORK_LOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DNA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DNA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DNATest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DNATest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,8 +138,27 @@
       <option name="project" value="LOCAL" />
       <updated>1729385215722</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Trying to debug the error in my code.">
+      <option name="closed" value="true" />
+      <created>1729702734693</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729702734693</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -147,6 +166,7 @@
     <MESSAGE value="Continued thinking and started code." />
     <MESSAGE value="Looped through entire sequence looking for STR." />
     <MESSAGE value="Finished structure, but still getting errors." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished structure, but still getting errors." />
+    <MESSAGE value="Trying to debug the error in my code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Trying to debug the error in my code." />
   </component>
 </project>

@@ -23,7 +23,6 @@ public class DNA {
             return 0;
         }
 
-
         // Calculates STR value
         long STR_hash = 0;
         for (int i = 0; i < STR.length(); i++) {
@@ -46,22 +45,28 @@ public class DNA {
         int max_count = 0;
         for (int i = STR.length(); i < sequence.length(); i++){
 
-            if (current_hash == STR_hash){
+            long temp_hash = current_hash;
+            int temp_pos = i;
+            while (temp_hash == STR_hash){
                 current_count++;
                 if (max_count < current_count){
                     max_count = current_count;
                 }
+                // If we're not at the end, update the hash to the next window
+                if (temp_pos + STR.length() < sequence.length()) {
+                    for (int j = temp_pos; j < STR.length() + temp_pos; j++) {
+                        temp_hash = (temp_hash * BASE + sequence.charAt(j)) % MOD;
+                    }
+                }
+                temp_pos += STR.length();
+
             }
-            else{
-                current_count = 0;
-            }
+            current_count = 0;
             current_hash = ((current_hash + MOD) - (sequence.charAt(i - STR.length()) * base_power) % MOD) % MOD;
             current_hash = ((current_hash * BASE) + sequence.charAt(i)) % MOD;
 
 
         }
-
-
 
         return max_count;
     }

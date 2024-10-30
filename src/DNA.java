@@ -47,7 +47,7 @@ public class DNA {
         while(i <= sequence.length() - STR.length()){
             int current_count = 0;
 
-            while (current_hash == STR_hash){
+            while (current_hash == STR_hash && i <= sequence.length() - STR.length()){
                 current_count++;
                 i += STR.length();
                 // If we're not at the end, update the hash to the next window

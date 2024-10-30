@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6d822f69-9e3c-4e2b-8ee1-11779bb646bd" name="Changes" comment="Created nested while loop and changed shifting approach.">
+    <list default="true" id="6d822f69-9e3c-4e2b-8ee1-11779bb646bd" name="Changes" comment="Solved all cases but testLargest()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DNA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DNA.java" afterDir="false" />
     </list>
@@ -165,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730265129891</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Solved all cases but testLargest()">
+      <option name="closed" value="true" />
+      <created>1730267874906</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1730267874906</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,6 +195,7 @@
     <MESSAGE value="Finished structure, but still getting errors." />
     <MESSAGE value="Trying to debug the error in my code." />
     <MESSAGE value="Created nested while loop and changed shifting approach." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created nested while loop and changed shifting approach." />
+    <MESSAGE value="Solved all cases but testLargest()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved all cases but testLargest()" />
   </component>
 </project>
